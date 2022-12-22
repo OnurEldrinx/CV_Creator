@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="720.0" minWidth="1080.0" prefHeight="720.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.teamfive.cvcreator.Controller.HomepageController">
+   <children>
+      <BorderPane prefHeight="720.0" prefWidth="1080.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <VBox maxWidth="350.0" prefHeight="720.0" prefWidth="350.0" style="-fx-background-color: #4A148C;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="200.0" prefWidth="300.0" text="CV CREATOR" textAlignment="CENTER" textFill="WHITE" wrapText="true" VBox.vgrow="ALWAYS">
+                     <font>
+                        <Font name="Britannic Bold" size="50.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+                     </VBox.margin>
+                  </Label>
+                  <ImageView fitHeight="300.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+                     </VBox.margin>
+                     <image>
+                        <Image url="@../Images/curriculum-vitae.png" />
+                     </image>
+                  </ImageView>
+                  <Pane prefHeight="250.0" prefWidth="300.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Button fx:id="documentationButton" contentDisplay="CENTER" layoutX="25.0" layoutY="14.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="300.0" style="-fx-background-color: #7C4DFF; -fx-background-radius: 25; -fx-alignment: center;" text="Documentation" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="Britannic Bold" size="24.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="aboutUsButton" contentDisplay="CENTER" layoutX="25.0" layoutY="81.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="300.0" style="-fx-background-color: #7C4DFF; -fx-background-radius: 25; -fx-alignment: center;" text="About Us" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="Britannic Bold" size="24.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="50.0" top="50.0" />
+                     </VBox.margin>
+                  </Pane>
+               </children>
+            </VBox>
+         </left>
+         <right>
+            <VBox alignment="TOP_RIGHT" prefHeight="720.0" prefWidth="91.0" style="-fx-background-color: #9575CD;" BorderPane.alignment="TOP_RIGHT">
+               <children>
+                  <Button fx:id="createCVButton" alignment="CENTER" contentDisplay="TOP" graphicTextGap="10.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="129.0" style="-fx-background-radius: 25; -fx-region-background: none;" text="NEW CV" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Britannic Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" style="-fx-translate-y: 0;">
+                           <image>
+                              <Image url="@../Images/add.png" />
+                           </image>
+                           <effect>
+                              <Glow level="0.27" />
+                           </effect>
+                        </ImageView>
+                     </graphic>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="editButton" alignment="CENTER" contentDisplay="TOP" graphicTextGap="10.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="175.0" style="-fx-region-background: none;" text="EDIT" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Britannic Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" style="-fx-region-background: 0;">
+                           <image>
+                              <Image url="@../Images/edit.png" />
+                           </image>
+                           <effect>
+                              <Glow level="0.27" />
+                           </effect>
+                        </ImageView>
+                     </graphic>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="deleteButton" alignment="CENTER" contentDisplay="TOP" graphicTextGap="10.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="175.0" style="-fx-region-background: none;" text="DELETE" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Britannic Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" style="-fx-region-background: 0;">
+                           <image>
+                              <Image url="@../Images/remove.png" />
+                           </image>
+                           <effect>
+                              <Glow level="0.27" />
+                           </effect>
+                        </ImageView>
+                     </graphic>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="exportButton" alignment="CENTER" contentDisplay="TOP" graphicTextGap="10.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="70.0" style="-fx-region-background: none;" text="EXPORT" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Britannic Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" style="-fx-translate-y: 0;">
+                           <image>
+                              <Image url="@../Images/export.png" />
+                           </image>
+                           <effect>
+                              <Glow level="0.27" />
+                           </effect>
+                        </ImageView>
+                     </graphic>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </VBox>
+         </right>
+         <center>
+            <StackPane fx:id="centerPane" prefHeight="775.0" prefWidth="1240.0" BorderPane.alignment="CENTER">
+               <padding>
+                  <Insets topRightBottomLeft="2" /> </padding>
+               <children>
+                  <ScrollPane fx:id="tableScrollPane" prefHeight="775.0" prefWidth="1240.0" vbarPolicy="NEVER">
+                     <content>
+                        <TableView fx:id="table" prefHeight="775" prefWidth="1240.0" visible="false">
+                           <padding>
+                              <Insets topRightBottomLeft="2" /> </padding>
+                        </TableView>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </StackPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
